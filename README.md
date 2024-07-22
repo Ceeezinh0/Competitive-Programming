@@ -1,2 +1,5 @@
-# MARATONA
-Treinamento/ Preparação para Programação Competitiva
+# Programação Competitiva
+
+## Minha trajetória
+
+
