@@ -11,7 +11,7 @@ This repository contains my solutions and notes related to competitive programmi
 ## Repository Structure
 - `solutions/`: Contains all the solutions to the problems.
 - `notes/`: Important notes and learning resources.
-- `contests/`: Problems and solutions from various contests.
+- `contests/`: Problems and solutions from various contests. 
 
 ## How to Contribute
 - Fork the repository.
