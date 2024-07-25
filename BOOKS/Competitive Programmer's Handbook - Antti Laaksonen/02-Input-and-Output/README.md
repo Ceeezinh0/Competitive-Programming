@@ -1,3 +1,5 @@
+# Competitive Programmer's Handbook - Antti Laaksonen
+
 ## Input and Output
 
 The functions `cin` and `cout` can be heavy depending on the problem. To make them lighter, you can use:
