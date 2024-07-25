@@ -1,4 +1,4 @@
-# Competitive Programming Guide
+# Competitive Programmer's Handbook - Antti Laaksonen
 
 ## Introduction
 
