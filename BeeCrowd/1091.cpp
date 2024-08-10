@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(0); // desvencula a sincronização com stdio
-    cin.tie(0);// desvencula cin de cout
+    ios::sync_with_stdio(0); // disconnect the synchronization from stdio
+    cin.tie(0);// unlink cin from cout
 
     int K;
 
