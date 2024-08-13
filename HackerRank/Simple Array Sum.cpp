@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int N, sum = 0;
+    int N, SUM = 0;
 
     cin >> N;
 
@@ -11,10 +11,10 @@ int main(){
     
     for(int i = 0; i < N; i++){
         cin >> Vetor[i];
-        sum += Vetor[i];
+        SUM += Vetor[i];
     }
     
-    cout << sum << "\n";
+    cout << SUM << "\n";
     
     return 0;
 }
