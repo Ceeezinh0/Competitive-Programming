@@ -17,8 +17,12 @@ jobs:
     - name: Install Dependencies
       run: sudo apt-get install -y g++
 
-    - name: Build
-      run: g++ -o output_file_name path/to/your/source_file.cpp
-
-    - name: Run
-      run: ./output_file_name
+    - name: Build and Test All
+      run: |
+        for dir in "Algoritmos - CORMEN" "BeeCrowd" "HackerRank"; do
+          for file in $dir/*.cpp; do
+            if [ -f "$file" ]; then
+              g++ -o output "${file}" && ./output
+            fi
+          done
+        done
