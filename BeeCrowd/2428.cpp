@@ -7,7 +7,7 @@ int main(){
 
     for (int i = 0; i < 4; i++) {
         cin >> vetor[i];
-    }
+    } 
 
     sort(vetor, vetor + 4);
 
