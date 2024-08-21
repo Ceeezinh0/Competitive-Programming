@@ -28,7 +28,27 @@ void explorar(int x, int y){
 }
 
 int main(){ 
-    int n, m;
+    cin >> n >> m;
+
+    mapa.resize(m, vector<char>(n));
+    visitado.resize(m, vector<bool>(n, false));
+
+    int inicioX, inicioY;
+
+    for(int i =0; i < m; i++){
+      for(int j = 0; j < n; j++){
+        cin >> mapa[i][j];
+
+        if(mapa[i][j] == 'P'){
+          inicioX = i;
+          inicioY = j;
+        }
+      }
+    }
+
+    explorar(inicioX, inicioY);
+
+    cout << ouro << "\n";
 
     return 0;
 }
