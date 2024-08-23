@@ -6,20 +6,20 @@ int main(){
     int A[10], chave, i;
 
     for(int i = 0; i < 10; i++){
-        cin >> A[i];
+        cin >> A[i]; 
     }
 
     // Insertion Sort
-    for(int j = 1; j < 10; j++){// Esse for percorre o vetor;
+    for(int j = 1; j < 10; j++){
         chave = A[j];
         i = j - 1;
 
-        while(i >= 0 && A[i] > chave){// Esse while encontra a posição onde deverá ser adicionado a chave
+        while(i >= 0 && A[i] > chave){
             A[i + 1] = A[i];
             i--;
         }
 
-        A[i + 1] = chave;// Insere a chave no endereço certo do vetor
+        A[i + 1] = chave;
     }
 
     for(int i = 0; i < 10; i++){
