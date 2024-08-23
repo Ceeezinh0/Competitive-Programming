@@ -12,9 +12,9 @@ void bfs(int a){
     estado[a] = 1;
 
     for(auto it : v[a]){
-            if(estado[it]==0){
-                bfs(it);
-            }
+        if(estado[it]==0){
+           bfs(it);
+        }
     }     
 }
 
