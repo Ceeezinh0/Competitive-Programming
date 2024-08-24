@@ -19,7 +19,8 @@ void bfs(int a){
 }
 
 int main(){
-    int viz, n;
+    int viz, n, p, t1, t2;
+    char a1[30], a2[30], a3[30], nome[30];
 
     while(scanf("%d", &n), n){
         memset(sai, 0, sizeof sai);
@@ -36,44 +37,40 @@ int main(){
             }
         }
 
-    int p, t1, t2;
-    char a1[30], a2[30], a3[30];
-    
-    while(scanf("%d", &p), p){ 
-        memset(estado, 0, sizeof estado);
+        while(scanf("%d", &p), p){ 
+            memset(estado, 0, sizeof estado);
 
-	    scanf("%d %d", &t1, &t2);
+            scanf("%d %d", &t1, &t2);
 
-        bfs(p);
-		
-        scanf("%s %s %s", a1, a2, a3);
+            bfs(p);
+            
+            scanf("%s %s %s", a1, a2, a3);
 
-		for(int i=1; i<=n; i++){
-			if(estado[i]==0){
-                 res[i].push_back(a1);
-            }else{
-				if(sai[i]<t1){
+            for(int i=1; i<=n; i++){
+                if(estado[i]==0){
                     res[i].push_back(a1);
-                }else if(sai[i] < t2){
-                    res[i].push_back(a2);
                 }else{
-                    res[i].push_back(a3);
+                    if(sai[i]<t1){
+                        res[i].push_back(a1);
+                    }else if(sai[i] < t2){
+                        res[i].push_back(a2);
+                    }else{
+                        res[i].push_back(a3);
+                    }
                 }
-			}
-		}
-    }
-	char nome[30];
+            }
+        }
 	
-    for(int i=1; i<=n; i++){
-		scanf("%s", nome);
-		cout << nome << ": ";
+        for(int i=1; i<=n; i++){
+            scanf("%s", nome);
+            cout << nome << ": ";
 
-		for(auto it : res[i]){
-			cout << it << " ";
-		}
-		cout << "\n";
-	}
-  }
-  
-  return 0;
+            for(auto it : res[i]){
+                cout << it << " ";
+            }
+            cout << "\n";
+        }
+    }
+    
+    return 0;
 }
